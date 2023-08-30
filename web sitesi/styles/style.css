@@ -1,0 +1,315 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+  :root{
+    --main-color: rgba(242, 194, 239, 0.8);
+   --black-color: #000000;
+   --border: 0.1rem solid rgba(226, 178, 237, 0.8);
+}
+    
+*{
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:0.2s ease ;
+
+}
+
+/*! base html codes */
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+
+html::-webkit-scrollbar{
+    width:0.8rem;
+    background-color:rgba(242, 194, 239, 0.8);
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color:#8308a4
+}
+
+
+body{
+    background-color:var(--main-color) ;
+    height: 200vh;
+}
+
+section{ 
+    padding: 3.5rem 10%;
+}
+
+.btn{
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 1rem 1rem;
+    border-radius: 20rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color:#8012a5;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    
+}
+
+.heading{
+    color: #8012a5;
+    text-transform: uppercase;
+    font-size:3rem;
+    margin-bottom: 2rem;
+    margin-bottom: 0.1rem solid #7820e4;
+
+}
+
+.heading span{
+    
+    text-transform: uppercase;
+}
+
+/*! header start */
+.header .logo img {
+    height: 10rem;
+}
+
+.header{
+    background-color:hsl(0, 0%, 100%);
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size:1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+
+}
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color:#8308a4;
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    background-color: transparent;
+}
+
+
+/*! header end */
+
+/*! home start */
+.home{
+    min-height: 100vh; 
+    background: url(../images/cilt-bakimi.jpg)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #ffffff;
+}
+.home .content p{
+   font-size: 2rem;
+   font-weight: 300rem;
+   line-height: 1.8;
+   padding: 1rem 0;
+   color: #f8650a;
+   
+   
+}
+/*! home end */
+
+.box{
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    background-color: #fff;
+    min-height: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+     }
+
+.box-container .box .price span{
+    text-decoration: line-through;
+}
+
+.menu .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap:1.5rem;
+}
+
+.box img{
+    width:100%;
+    object-fit:cover
+ }
+
+ .box .box-head img {
+    width: 200px; 
+    height: auto; 
+    object-fit: cover; 
+    margin-right: 200px; 
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 1px;
+}
+
+
+.products  .title{
+    font-size: 1.4rem;
+
+}
+
+.products  .name{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: start;
+    overflow-wrap:anywhere ;
+    
+ }
+
+.about p{
+    font-size:15px;
+
+}
+
+.about h3{
+    font-size:20px;
+    color:#8308a4
+    
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width:7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact .row{
+    display:flex;
+    background-color:#fff;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.contact .row .map{
+    flex:1 1 30rem;
+    width:50%;
+    object-fit: cover;
+}
+
+.contact .row .form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #8308a4;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin:2rem ;
+    border:var(--border)
+}
+.contact .row form .inputBox i{
+   color:black;
+   font-size: 1.5em;
+   padding-left: 1.5rem;
+}
+ 
+.contact .row form .inputBox input{
+    width:100%;
+    padding:2rem;
+    font-size:1.7rem;
+    color: #f8650a;
+    text-transform: none;
+    background: none;
+}
+
+.blogs .title{
+    font-size: 15px;
+    color: #f8650a;
+}
+
+.share{
+    font-size:50px;
+}
+
+.credit{
+    font-size:10px;
+}
+
+.footer .share{
+    padding:2rem 0;
+
+}
+
+.footer .share a{
+    width:5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color:#8012a5;
+    font-size:var(--border);
+    border-radius: 50% ;
+    margin:0.3rem;
+    
+
+}
+.footer .share a:hover{
+    background-color: var(--main-color);
+
+}
+
+
+/*! products start */
+   
+/*! products end */
+
+ 
+
+
